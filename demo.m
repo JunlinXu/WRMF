@@ -12,7 +12,7 @@
         vn=In==I;
         matDT=virusdrug;
         matDT(Vp(vp))=0;
-        recMatrix=WRMF(B1,drugsim,virussim,30,5);
+        recMatrix=WRMF(matDT,drugsim,virussim,30,5);
         V=[Vn(vn);Vp(vp)];
         MatPredict(V)=recMatrix(V);
     end
